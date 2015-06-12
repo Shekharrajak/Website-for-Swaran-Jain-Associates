@@ -1,40 +1,229 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
-	<head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <title>Title here</title>
-        <meta name="description" content=" " />
-        <meta name="keywords" content=" " />
-        <meta name="author" content=" " />
-        <link rel="shortcut icon" href=" ">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="css/component.css" />
-        <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Clicker+Script' rel='stylesheet' type='text/css'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sofia" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Berkshire+Swash" />
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="css/style_parallax.css">
+     
+       
+        <link rel="stylesheet" type="text/css" href="css/component_header.css" />
+     
+     <link href="css/animate.min_our_team.css" rel="stylesheet"> 
+     <link href="css/animate_our_team.css" rel="stylesheet"> 
+     <link href="css/bootstrap.min_our_team.css" rel="stylesheet"> 
+       
         
-	</head>
-	<body>
-		<div class="container demo-2">
-			<div class="content">
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+  	<script>
+			$(document).ready(function(){
+			    $('section[data-type="parallax_section"]').each(function(){
+			        var $bgobj = $(this); // Variable para asignacion de objeto
+			        $(window).scroll(function() {
+			        	$window = $(window);
+			            var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+			            // cordinadas del background
+			            var coords = '50% '+ yPos + 'px';
+			            // moviendo el background
+			            $bgobj.css({ backgroundPosition: coords });
+			        });
+			    });
+			});
+
+		</script>
+	<title>Vertical Fixed Navigation</title>
+</head>
+<body>
+	<nav id="cd-vertical-nav">
+		<ul>
+			<li>
+				<a href="#section1" data-number="1">
+					<span class="cd-dot"></span>
+					<span class="cd-label">About us</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section2" data-number="2">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Services</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section3" data-number="3">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Features</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section4" data-number="4">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Portfolio</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section5" data-number="5">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Our Team</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section6" data-number="6">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Contact</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<section id="section1" class="demo-2" >
+		<div >
+			
                 <div id="large-header" class="large-header">
                     <canvas id="demo-canvas"></canvas>
-                    <h1 class="main-title">Title here</span></h1>
+                    <h3  class="wow bounce main-title" data-wow-offset="0" data-wow-delay="0.7s" >Swaran Jain & Associates</span></h3><br>
+                    <h6 class="main-subtitle wow fadeIn" data-wow-delay="0.9s">Swaran Jain & Associates, a Company Secretary firm was established in Aug, 2002 with an objective of providing Corporate and Business Advisory Services to Corporate Clients so as to enable them to comply with Corporate Laws and adopt practices of good Corporate Governance. </h6>
                 </div>
-               
-                <div class="codrops-header">
-                    <h1>Background Headers </h1>
-                   
-                </div>
-            </div>
-            <!-- Related demos -->
-           
-            
-		</div><!-- /container -->
-       
-        <script src="js/demo-2.js"></script>
-	</body>
-</html>
+         </div>
+		<a href="#section2" class="cd-scroll-down cd-img-replace">scroll down</a>
+	</section><!-- cd-section -->
 
+	<section id="section2" class="cd-section" "parallax_section" data-speed="10">
+		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+        <article>
+				<div class="geekhome">
+				
+				</div>
+				<h2>Pagina: 2</h2>
+			</article>
+	</section><!-- cd-section -->
+
+	<section id="section3" class="cd-section" "parallax_section" data-speed="10">
+		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+        <article>
+				<div class="geekhome">
+				
+				</div>
+				<h2>Pagina: 2</h2>
+			</article>
+	</section><!-- cd-section -->
+
+	<section id="section4" class="cd-section" "parallax_section" data-speed="10">
+		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+        <article>
+				<div class="geekhome">
+				
+				</div>
+				<h2>Pagina: 2</h2>
+			</article>
+	</section><!-- cd-section -->
+
+	<section id="section5" class="cd-section" "parallax_section" data-speed="10">
+			<div id="our-team">
+		<div class="container">
+			<div class="text-center">
+				<h2>Our Team</h2>
+				
+			</div>
+			<div class="row">
+				<div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.7s">
+					<div class="text-center">
+						<img src="img/team/2.png" alt="">
+						<h2>John Doe</h2>
+						<h4>Founder & CEO</h4>
+						
+					</div>
+				</div>
+				<div class="col-md-4 wow bounceInDown" data-wow-offset="0" data-wow-delay="0.7s">
+					<div class="text-center">
+						<img src="img/team/2.png" alt="">
+						<h2>John Doe</h2>
+						<h4>Creative Director</h4>
+						
+					</div>
+				</div>
+				<div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.7s">
+					<div class="text-center">
+						<img src="img/team/2.png" alt="">
+						<h2>John Smith</h2>
+						<h4>Creative Director</h4>
+						
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="team">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.9s">
+						<div class="text-center">
+							<img src="img/team/team1.jpg" class="img-responsive" alt="">
+							<h2>John Doe</h2>
+							<h4>Founder & CEO</h4>
+							
+						</div>
+					</div>
+					<div class="col-md-3 wow fadeInRight" data-wow-offset="0" data-wow-delay="1s">
+						<div class="text-center">
+							<img src="img/team/team1.jpg" class="img-responsive" alt="">
+							<h2>John Doe</h2>
+							<h4>Creative Director</h4>
+							
+						</div>
+					</div>
+					<div class="col-md-3 wow fadeInLeft" data-wow-offset="0" data-wow-delay="1s">
+						<div class="text-center">
+							<img src="img/team/team1.jpg" class="img-responsive" alt="">
+							<h2>John Smith</h2>
+							<h4>Creative Director</h4>
+							
+						</div>
+					</div>
+					<div class="col-md-3 wow fadeInLeft" data-wow-offset="0" data-wow-delay="1s">
+						<div class="text-center">
+							<img src="img/team/team1.jpg" class="img-responsive" alt="">
+							<h2>John Smith</h2>
+							<h4>Creative Director</h4>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--/#our-team-->
+	</section><!-- cd-section -->
+
+	<section id="section6" class="cd-section" "parallax_section" data-speed="10">
+		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+        <article>
+				<div class="geekhome">
+				
+				</div>
+				<h2>Pagina: 2</h2>
+			</article>
+	</section><!-- cd-section -->
+	
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/demo-2.js"></script>
+<!--our team effect -->
+ <script src="js/bootstrap.min.js"></script>	
+	
+	<script src="js/wow.min.js"></script>
+	
+	
+	
+	<script>
+	wow = new WOW(
+	 {
+	
+		}	) 
+		.init();
+	</script>
+ <!-- our team effect end -->
+</body>
+</html>
