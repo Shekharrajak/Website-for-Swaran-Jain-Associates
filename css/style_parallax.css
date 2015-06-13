@@ -1,5 +1,6 @@
 
-#section1{}
+#section1{
+	background:url(../img/cover.jpg) 50% 0 no-repeat fixed;}
 #section2 {
 	background:#FFF 50% 0 no-repeat fixed;
 	min-height: 700px;
