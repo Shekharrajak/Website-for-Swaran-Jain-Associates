@@ -1,0 +1,97 @@
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body_tab {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #47a3da;
+}
+
+
+
+.container_tab > header_tab > span {
+	display: block;
+	position: relative;
+	z-index: 9999;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	padding: 0 0 0.6em 0.1em;
+}
+
+.container_tab > header_tab > span span:after {
+	width: 30px;
+	height: 30px;
+	left: -12px;
+	font-size: 50%;
+	top: -8px;
+	font-size: 75%;
+	position: relative;
+}
+
+.container_tab > header_tab > span span:hover:before {
+	content: attr(data-content);
+	text-transform: none;
+	text-indent: 0;
+	letter-spacing: 0;
+	font-weight: 300;
+	font-size: 110%;
+	padding: 0.8em 1em;
+	line-height: 1.2;
+	text-align: left;
+	left: auto;
+	margin-left: 4px;
+	position: absolute;
+	color: #fff;
+	background: #47a3da;
+}
+
+
+
+
+
+.container_tab > header_tab nav .bp-icon:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 2;
+	text-indent: 0;
+}
+
+.container_tab > header_tab nav a:hover:after {
+	color: #fff;
+}
+
+
+
+
+@media screen and (max-width: 55em) {
+
+	.container_tab > header_tab h1,
+	.container_tab > header_tab nav {
+		float: none;
+		color:#000;
+	}
+
+	.container_tab > header_tab > span,
+	.container_tab > header_tab h1 {
+		text-align: center;
+		color:#333;
+		z-index:999;
+		
+	}
+
+	.container_tab > header_tab nav {
+		margin: 0 auto;
+	}
+
+	.container_tab > header_tab > span {
+		text-indent: 30px;
+	}
+}
