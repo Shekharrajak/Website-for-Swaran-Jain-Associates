@@ -118,7 +118,7 @@ Main components
   transform: translateX(-50%);
   bottom: 8
   0px;
-  width: 38px;
+  width: 48px;
   height: 44px;
   background: url("../img/cd-arrow-bottom.svg") no-repeat center center;
   z-index:2;
@@ -343,4 +343,8 @@ Main components
 }
 .btn_find{
 	padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;
+	color:#F00;
+	display:block;
+	text-shadow:#999;
+	width:200px;
 }
