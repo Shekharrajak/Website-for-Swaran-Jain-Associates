@@ -62,6 +62,24 @@
 	font: 400 1.5em/125% 'Berkshire Swash', Helvetica, Sans-serif;
 }
 
+.about-subtitle{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 50%;
+	left: 45%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	float:left;
+	font-weight: normal;
+	font-size: 1em;
+	padding-left: 10px;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+	
+	font: 400 1.2em/125% 'Berkshire Swash', Helvetica, Sans-serif;
+}
 @media only screen and (max-width : 768px) {
 	
 
@@ -69,3 +87,18 @@
 		font-size: 4em;
 	}
 }
+
+.about-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 0%;
+	left:0%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	font: 400 2.0em/125% 'Sofia', Helvetica, Sans-serif;
+	
+
+ }
