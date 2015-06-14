@@ -338,6 +338,9 @@ Main components
 
 @media only screen and (min-width: 768px) {
   .touch .cd-nav-trigger, .touch #cd-vertical-nav {
-    bottom: 40px;
+    bottom: 100px;
   }
+}
+.btn_find{
+	padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;
 }
